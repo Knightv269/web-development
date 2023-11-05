@@ -1,0 +1,295 @@
+* { 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+} 
+  
+body { 
+    background-color: white; 
+    color: black; 
+    font-family: "Fira Sans", sans-serif; 
+    background-color: white; 
+    /* background-image: url('img/bg\ 3.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+  
+nav { 
+    width: 100%; 
+    height: 80px; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px 5%; 
+    background-color: #000000; 
+} 
+  
+nav .heading { 
+    font-size: 30px; 
+    font-weight: 700; 
+    color: white; 
+} 
+  
+nav ul { 
+    display: flex; 
+    list-style: none; 
+} 
+  
+nav ul li { 
+    padding: 8px 15px; 
+    border-radius: 10px; 
+    transition: 0.2s ease-in; 
+} 
+  
+nav ul li a { 
+    color: black; 
+    font-size: 20px; 
+    font-weight: 500; 
+    text-decoration: none; 
+    color: white; 
+} 
+  
+nav ul li:hover { 
+    background-color: rgb(0, 109, 128); 
+} 
+  
+nav ul li a:hover { 
+    color: white; 
+} 
+  
+nav .sideMenuButton { 
+    font-size: 30px; 
+    font-weight: bolder; 
+    cursor: pointer; 
+    display: none; 
+}
+.header{
+    text-align:left;
+    display: inline-block;
+    position: absolute;
+    display: flex;
+}
+.logo{
+  width: 50px;
+  height: auto;
+  margin-left: 10px;
+}
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 15px;
+    font-size: 35px;
+}
+input.search {
+    width: 260px;
+    border: 1px solid #555;
+    display: block;
+    padding: 9px 4px 9px 40px;
+    background: transparent url('img/search.svg') no-repeat 13px;
+}
+.search{
+    margin:5px;
+    position: absolute;
+    right: 20px;
+    top: 85px;
+    display: inline-block;
+    border-radius: 20px;
+    padding:5px;
+}
+.search:hover{
+    border-radius: 20px;
+    background-color: rgba(111, 118, 119, 0.63); 
+}
+.para-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.para{
+    position: relative;
+    display: inline-block;
+    top: 50px;
+    background-color: #26758181; 
+    height: 20%;
+    color: white;  
+    margin: 30px 20px;
+    max-width: 100%;
+    text-align: center;
+    border-radius: 12px; 
+    padding: 20px 10px; 
+    font-size: 20px;
+    cursor: default; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+.para:hover{
+    background-color: #39389ba9;
+    transition: 0.7s ease-out;
+} 
+.products{
+    display: inline-block;
+    cursor: default; 
+    display: flex; 
+    flex-direction: column;
+    position: relative;
+    
+
+}
+.About h3{
+    left: 50px;
+  text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bolder;
+    font: bold;
+    top: 60px;
+    position:relative;
+}
+.products-row1{
+    width: 100vw;
+    display: flex;
+    margin-top: 200px;
+    justify-content: space-between;
+    margin: 20px;
+    font-size: 20px;
+    top: 60px;
+    position: relative;
+}
+.products-row1 div{
+    margin: 20px 100px;
+    padding: 5px;
+}
+.products-row1 a{
+    margin: 20px 100px;
+    padding: 5px;
+}
+.products-row1 a:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+   background-color: #555;
+   border-radius: 5px;
+   
+}
+ .product-row2{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 50px;
+    position: relative;
+ }
+ .productsbox{
+    border-radius: 20px;
+ }
+ .productbox img{
+    width: 500px;
+    align-self: center;
+    border-radius: 10px;
+    height: 300px;
+ }
+.contact{
+    width: 100px; 
+    text-align: left; 
+    font-size: 20x; 
+    position: relative;
+    top: 50px;
+    left: 30px;
+    padding: 300;
+    height: 320px;
+    width: 260px;
+    flex-direction: column;
+    display: flex;
+    border: #000000;
+}
+
+    
+
+.head{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    font: bold;
+}
+.contactMenu{
+    justify-content: space-evenly;
+    align-items: left;
+}
+.input2{
+
+    margin-top: 10px; 
+
+}
+.label1 { 
+    font-size: 18px; 
+    margin-top: 8px; 
+    margin-bottom: 8px; 
+    font-weight: bolder; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    width:max-content;
+    border-radius: 3px;
+} 
+.contactMenu .input1 input { 
+    border-radius: 10px; 
+    padding: 6px;
+    
+}
+.input2 input { 
+    border-color: rgb(66, 160, 118); 
+    width: 400px; 
+
+}
+.button{
+    margin-top: 12px; 
+    margin-left: 5px; 
+    font-weight: bolder;
+    
+}
+.button button{
+    border-radius: 3px;
+   
+
+}
+.button button:hover{
+    background-color: #383f9ba9;
+}
+button { 
+    width: 162px; 
+    height: 35px; 
+    border-radius: 12px; 
+    border-color: transparent; 
+} 
+.about{
+   display: flex;
+   text-align: left;
+   align-items: center;
+}
+.address{
+    position:absolute;
+    right: 30px;
+    top: 410px;
+    
+
+    padding: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12); 
+    border-radius: 3px;
+    width: 550px;
+}
+.address2{
+    position: absolute; 
+    right: 30px;
+    top: 510px;
+    padding: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12); 
+    border-radius: 3px;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    width: 550px;
+}
+.about h3{
+    color: #000000;
+    font-size: bolder;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+ 
+   
