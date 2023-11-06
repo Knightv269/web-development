@@ -20,7 +20,7 @@
             <li><a href="#Home">Home</a></li> 
             <li><a href="#About">About</a></li> 
             <li><a href="#Signup">Sign Up</a></li> 
-            <li><a href="#">Contact us</a></li>
+            <li><a href="#Contactus">Contact us</a></li>
                 </ul>
         </div> 
     </nav> 
@@ -45,47 +45,34 @@
 </div>
 </div>
 <!-- about us -->
-<section class="products">
+<section class="products" id="About">
     <div class="About"><H3>About us</H3></div>
     <div class="products-row1">
-        <a href="#Signup">Enroll now</a>
+        <!-- <a href="#Signup">Enroll now</a> -->
     </div>
     <div class="product-row2">
         <div class="productbox">
             <img src="img/product btn1.jpg" alt="">
-           <div><h3>Terms and Conditions</h3> </div> 
-           <div class="products-btn"><a> More</a></div>
+           <div class="productname"><h3>Terms and Conditions</h3> </div> 
+           <div class="productsbtn"><a> Learn More</a></div>
         </div>
         <div class="productbox">
             <img src="img/product btn2.jpg" alt="">
-           <div><h3>Creative Design</h3> </div> 
-           <div class="products-btn"><a> Learn More</a></div>
+           <div class="productname" ><h3>Creative Design</h3> </div> 
+           <div class="productsbtn"><a> Learn More</a></div>
         </div>
         <div class="productbox">
             <img src="img/product btn3.jpg" alt="">
-           <div><h3>Social Media</h3> </div> 
-           <div class="products-btn"><a> Learn More</a></div>
+           <div class="productname"><h3>Social Media</h3></div> 
+           <div class="productsbtn"><a> Learn More</a></div>
         </div>
     </div>
 
     
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- sign up
-<div class="contact" id="#Signup"> 
-    <div class="head"><span>Sign Up</span></div> 
+<div class="contact" id="Signup"> 
+    <div class="head"><h3>Sign Up</h3></div> 
     <div class="contactMenu"> 
         <div class="input1"> 
             <div class="label1">Your Name</div> 
@@ -114,8 +101,8 @@
     </div>
 </div>
 
- more info with sign up !!!!!!!!!!!
-<div class="about">
+ <!-- more info with sign up  -->
+<div class="about" id="Contactus">
     <div class="address">
             <h3 class="addresstitle">Address</h3>
         <p>789 Serenity Lane
@@ -129,7 +116,7 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus amet inventore voluptatem esse, nisi facere quidem mollitia natus impedit asperiores, deleniti in fugit tenetur neque exercitationem optio quisquam enim unde cumque!</p>
     </div>
     </div>
-     -->
+  
 
     </body>
 </html>
