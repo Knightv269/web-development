@@ -11,68 +11,62 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 <body>
-    <nav> 
+    <nav id="navbar"> 
         <!-- navbar  -->
+        
         <div class="heading">Landing Page</div> 
-                 <div class="navbar">
-                 <ul> 
-       
+            <ul> 
             <li><a href="#Home">Home</a></li> 
             <li><a href="#About">About</a></li> 
             <li><a href="#Signup">Sign Up</a></li> 
             <li><a href="#Contactus">Contact us</a></li>
-                </ul>
-        </div> 
+                </ul></div>
+                
     </nav> 
     <!-- header -->
-    <div class="header" id="Home"> 
-            <img class= "logo"src="img/bird_2.jpg" alt="">
-            <h2 class="title">Digital Marketing Agency</h2> 
-    </div>
+    <section id="home"> 
+            <h1>Digital Marketing Agency</h1> 
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+            <button class="btn"><a href="#About">View more</a> </button>
+    </section>
 <!-- searchbar -->
-    <input class="search" type="search" placeholder="Search">
-<!-- para -->
-<div class="para-container">
-    <div class="para">
-        <P> Digital marketing is an online promotional strategy that utilizes digital channels such as social media, search engines, and email to reach the target audience, increase brand visibility, and generate conversions</P>
-    </div>
-<div class="para">
-    <p>By leveraging digital tools and techniques, businesses can create highly targeted campaigns and efficiently measure their success. It is a crucial component of marketing strategy in the digital age.</p>
-</div>
-<div class="para">
-    <p>Marketing is like a turbocharged rocket propelling your brand into the stratosphere of success! With its wizardry, your business will be an unstoppable juggernaut, reaching more people than there are grains of sand on a beach.
-    </p>
-</div>
-</div>
-<!-- about us -->
-<section class="products" id="About">
-    <div class="About"><H3>About us</H3></div>
-    <div class="products-row1">
-        <!-- <a href="#Signup">Enroll now</a> -->
-    </div>
-    <div class="product-row2">
-        <div class="productbox">
-            <img src="img/product btn1.jpg" alt="">
-           <div class="productname"><h3>Terms and Conditions</h3> </div> 
-           <div class="productsbtn"><a> Learn More</a></div>
-        </div>
-        <div class="productbox">
-            <img src="img/product btn2.jpg" alt="">
-           <div class="productname" ><h3>Creative Design</h3> </div> 
-           <div class="productsbtn"><a> Learn More</a></div>
-        </div>
-        <div class="productbox">
-            <img src="img/product btn3.jpg" alt="">
-           <div class="productname"><h3>Social Media</h3></div> 
-           <div class="productsbtn"><a> Learn More</a></div>
-        </div>
-    </div>
+<input class="search" type="search" placeholder="Search">
+
 
     
 </section>
+<section id="About">
+    <h1 class="h-primary center">About</h1>
+    <div id="services">
+        <div class="box">
+            <img src="img/product btn1.jpg" alt="">
+            <h2 class="h-secondary center">Terms and Conditions</h2>
+            <hr>
+            <p class="center"> Digital marketing is an online promotional strategy that utilizes digital channels such as social media, search engines, and email to reach the target audience, increase brand visibility, and generate conversions.By leveraging digital tools and techniques, businesses can create highly targeted campaigns and efficiently measure their success. It is a crucial component of marketing strategy in the digital age.</p>
+        </div>
+        <div class="box">
+            <img src="img/product btn2.jpg" alt="">
+            <h2 class="h-secondary center">Creative Design</h2>
+            <hr>
+            <p class="center">Creative designs are like a visual symphony, where colors, shapes, and ideas dance together to create a harmonious composition. It's not just about aesthetics; it's a language that communicates emotions, messages, and stories without uttering a single word.
+             In the realm of creative design, imagination takes the lead. It's the birthplace of innovative concepts and groundbreaking ideas. Think of it as a playground where rules are meant to be bent, and boundaries are there to be pushed.
+                
+               </p>
+        </div>
+        <div class="box">
+            <img src="img/product btn3.jpg" alt="">
+            <h2 class="h-secondary center">Social Media</h2>
+            <hr>
+            <p class="center">Marketing is like a turbocharged rocket propelling your brand into the stratosphere of success! With its wizardry, your business will be an unstoppable juggernaut, reaching more people than there are grains of sand on a beach.</p>
+        </div>
+    </div>
+</section>
+
+
 
 <div class="contact" id="Signup"> 
-    <div class="head"><h3>Sign Up</h3></div> 
+    <div class="head"><h1>Sign Up</h1></div> 
     <div class="contactMenu"> 
         <div class="input1"> 
             <div class="label1">Your Name</div> 
@@ -93,7 +87,14 @@
             <div class="input2"> 
                 <input type="text" 
                     placeholder="Enter your Password here"> 
-            </div> 
+            </div>
+            <div class="label1"> 
+                <label>Any suggestion</label> 
+            </div>
+            <div class="input2"> 
+                <input type="message" id="message"
+                    placeholder="Message"> 
+            </div>
             <div class="button"> 
                 <button>Sign Up</button> 
             </div> 
@@ -101,7 +102,6 @@
     </div>
 </div>
 
- <!-- more info with sign up  -->
 <div class="about" id="Contactus">
     <div class="address">
             <h3 class="addresstitle">Address</h3>
@@ -116,6 +116,11 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus amet inventore voluptatem esse, nisi facere quidem mollitia natus impedit asperiores, deleniti in fugit tenetur neque exercitationem optio quisquam enim unde cumque!</p>
     </div>
     </div>
+<footer>
+    <div class="center">
+        Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+    </div>
+</footer>
   
 
     </body>
