@@ -1,8 +1,11 @@
 * { 
     padding: 0; 
     margin: 0; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
 } 
+html{
+    scroll-behavior: smooth;
+}
   
 body { 
     background-color: white; 
@@ -13,29 +16,32 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 } 
+
   
-nav { 
+#navbar { 
     width: 100%; 
     height: 80px; 
     display: flex; 
     justify-content: space-between; 
-    padding: 20px 5%; 
+    padding: 20px;
     background-color: #000000; 
 } 
-  
-nav .heading { 
+
+#navbar .heading { 
     font-size: 30px; 
     font-weight: 700; 
     color: white; 
+    padding: 5px;
+    
 } 
-  
+
 nav ul { 
     display: flex; 
     list-style: none; 
 } 
   
 nav ul li { 
-    padding: 8px 15px; 
+    padding: 8px 25px; 
     border-radius: 10px; 
     transition: 0.2s ease-in; 
 } 
@@ -49,7 +55,7 @@ nav ul li a {
 } 
   
 nav ul li:hover { 
-    background-color: rgb(0, 109, 128); 
+    background-color:#ff1d59;
 } 
   
 nav ul li a:hover { 
@@ -63,27 +69,63 @@ nav .sideMenuButton {
     display: none; 
 }
 .header{
-    text-align:left;
     display: inline-block;
     position: absolute;
     display: flex;
 }
-.logo{
-  width: 50px;
-  height: auto;
-  margin-left: 10px;
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
 }
-.title{
-    font-family: 'Times New Roman', Times, serif;
-    margin: 15px;
-    font-size: 35px;
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('img/bg4.png') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 60px;
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    position: relative;
+    top: 80px;
+    background-color: #000000;
+    color: white
+
+}
+.btn:hover{
+   transition: 0.3s ease-in;
+   background-color:#005792;
+}
+.btn a{
+    color: rgb(255, 255, 255);
+
 }
 input.search {
     width: 260px;
-    border: 1px solid #555;
+    border: 3px solid #000000;
     display: block;
     padding: 9px 4px 9px 40px;
     background: transparent url('img/search.svg') no-repeat 13px;
+    color: white;
 }
 .search{
     margin:5px;
@@ -96,178 +138,98 @@ input.search {
 }
 .search:hover{
     border-radius: 20px;
-    background-color: rgba(111, 118, 119, 0.63); 
-}
-.para-container{
-    display: flex;
-    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.63); 
+    
 }
 
-.para{
+ #About{
     position: relative;
-    display: inline-block;
-    top: 50px;
-    background-color: #266f8181; 
-    height: 20%;
-    color: white;  
-    margin: 30px 20px;
-    max-width: 100%;
+    align-items: center;
+ }
+ #About h1{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    border-radius: 12px; 
-    padding: 20px 10px; 
-    font-size: 20px;
-    cursor: default; 
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    
-}
-.para:hover{
-    background-color: #39389ba9;
-    transition: 0.7s ease-out;
-} 
-.products{
-    display: inline-block;
-    cursor: default; 
-    display: flex; 
-    flex-direction: column;
-    position: relative;
-    
-}
-.About h3{
-    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 60px;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    font: bold;
-    top: 60px;
-    position:relative;
-    font-size: 35px;
-    margin-bottom: 40px;
-
-}
-.products-row1{
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    top: 60px;
-    position: relative;
-    border-radius: 20px;
-    width: fit-content;
-}
-.products-row1 div{
-    margin: 20px 100px;
-    padding: 5px;
-}
-.products-row1 a{
-    margin: 20px 100px;
-    padding: 5px;
-}
-.products-row1 a:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-   background-color: #6e32bd81;
-   border-radius: 5px;
-   
-}
- .product-row2{
-    margin-bottom: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    top: 50px;
-    position: relative;
- }
- .productsbox{
-    border-radius: 20px;
-    display: flex;
- }
- .productbox img{
-    width: 500px;
-    align-self: center;
-    border-radius: 10px;
-    height: 300px;
- }
- .productname{
-    align-items: center;
-    text-align: center;
-    position: relative;
-    background-color: #266f8181; 
-    border-radius: 30px;
-    padding: 10px;
- }
- .productname:hover{
-    background-color: #5c32bd81;
-    transition: 0.3s ease-out;
- }
- .productsbtn{
-    align-items: center;
-    background-color: #266f8181; 
-    width: fit-content;
-    padding: 5px;
-    border-radius: 10px;
-    margin-top: 5px;
- }
- .productsbtn:hover{
-    background-color: #5c32bd7e;
-    transition: 0.3s ease-in;
-
-
  }
  
- .contact{
-    width: 100px; 
-    font-size: 20x; 
-    top: 50px;
-    padding: 300;
-    height: 320px;
-    width: 260px;
-    flex-direction: column;
+ #services{
+    justify-content: space-evenly;
     display: flex;
-    border: #000000;
-    position: relative;
-    display: inline-block;
-    display: flex;
-    display: inline-block;
     cursor: default; 
-    flex-direction: column;
+    position: relative;    
+}
+#services h2{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#services .box{ 
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background-color:#005792;
+    width: 33.3%;
+    margin-bottom: 20px;
+
+}
+#services .box:hover{
+   transition:ease;
+   background-color:#141010;
+   color: white;
+}
+
+#services .box img{ 
+   height: 200px;
+   margin: auto;
+   display: block;
+   border-radius: 15px;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+    font-size: 25px;
+
+} 
+ 
+#Signup{
+    display: flex;
     position: relative;
-    left: 410px;
-   
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
 }
 .head{
+    position: relative;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
     font-weight: bolder;
     font: bold;
     text-align: center;
-}
-.head h3{
-    align-items:center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: bolder;
-    font: bold;
-    position:relative;
-    left: 250px;
-    font-size: 35px;
-    margin-bottom: 40px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    font: bold;
-    position:relative;
-    font-size: 35px;
+    padding: 20px;
+    margin: 40px;
     
 }
+.head h1{
+    font-size: 40px;
+}
 .contactMenu{
-    justify-content: space-evenly;
-    position:relative;
-    background-color: #26758181; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#005792; 
     padding: 25px;
     border-radius: 20px;
     display: flex;
-    width: 800px;
+    width: 1000px;
+    margin-bottom: 100px;
     
 
 }
@@ -307,8 +269,9 @@ input.search {
 
 }
 .button button:hover{
-    background-color: #383f9ba9;
+    background-color:black;
     border-radius: 10px;
+    color: wheat;
 }
 button { 
     width: 162px; 
@@ -322,21 +285,36 @@ button {
    align-items: center;
    position: relative;
 }
+#message{
+    padding: 50px;
+    display: flex;
+
+}
+#Contactus.about{
+    position: relative;
+    padding: 45px;
+}
 .address{
    position: absolute;
-    top: 150px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12); 
-    border-radius: 3px;
+    border-radius: 10px;
     width:550px;
     left: 30px;
 }
 .address2{
     position: absolute;
     right: 30px;
-    top: 150px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12); 
     border-radius: 3px;
     width: 550px;
+}
+footer{
+    position: relative;
+    background: rgba(0, 0, 0, 0.651);
+    color: white;
+    padding: 9px 20px;
+    
+}
+.center{
+    text-align: center;
 }
  
    
