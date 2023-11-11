@@ -1,59 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <link href='https://unpkg.com/css.gg@2.0.0/icons/css/file.css' rel='stylesheet'>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Website</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-  <header>
-    <nav id="navbar">
-      <!-- navbar  -->
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Skills">Skills</a></li>
-        <li><a href="#Projects">Projects</a></li>
-        <li><a href="#Resume">Resume</a></li>
-        <li><a href="#Contact">Contact</a></li>
-      </ul>
+  <body>
+    <header>
+      <button class="Menubar" onclick="toggleMenu()"><h1>...</h1></button>
+      <div class="menu">
+        <nav>
+          <a style="animation-delay: 0.2s" href="#home">Home</a>
+          <a style="animation-delay: 0.3s" href="#Skills">Skills</a>
+          <a style="animation-delay: 0.4s" href="#Projects">Projects</a>
+          <a style="animation-delay: 0.5s" href="#Resume">Resume</a>
+          <a style="animation-delay: 0.6s" href="#Contact">Contact</a>
+        </nav>
       </div>
+    </header>
+    <!-- header -->
+    <section id="home">
+      <div class="home">
+        <h1>Hi I am Vinayak!</h1>
+        <!-- <div class="line"></div> -->
+        <p>
+          A web developer passionate about crafting immersive online
+          experiences. My journey in the digital realm involves sculpting the
+          backbone of websites with HTML, bringing them to life with the
+          artistry of CSS, and adding dynamic functionality through the wizardry
+          of JavaScript.
+        </p>
+        <div class="icons">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-youtube-play"></a>
+          <a href="#" class="fa fa-github"></a>
+        </div>
+      </div>
+    </section>
+    <section id="Skills">
+      <div class="skill_container">
+        <h3>Skills</h3>
+        <hr class="styled" />
+        <p>
+          I have a grasp of HTML for structuring content and CSS for styling web
+          pages.
+        </p>
+        <p>
+          Learning the basics of JavaScript for adding interactivity to
+          websites.
+        </p>
+        <p>
+          I understand the importance of responsive design and are beginning to
+          implement it in your projects.
+        </p>
+        <p>
+          I am getting familiar with version control systems like Git and
+          platforms like GitHub to manage your code.
+        </p>
+        <p>
+          I am developing skills in organizing and managing your projects,
+          understanding the importance of structure and planning.
+        </p>
+        <p></p>
+      </div>
+    </section>
+    <section id="Projects">
+      <div class="projects_container">
+        <h3>Projects</h3>
+        <hr class="styled" />
+        <section id="About">
+          <div id="services">
+            <div class="box">
+              <h2 class="title">Landing page</h2>
+              <a href="https://github.com/Knightv269/codsoft/tree/Landing-page" target="_blank" class="gg-file"></a>
+              <img src="img/landing page.webm.png" alt="">
+              <p class="center"></p>
+            </div>
+            <div class="box">
+              <h2 class="title">Portfolio</h2>
+              <a href="https://github.com/Knightv269/codsoft/tree/Portfolio" target="_blank" class="gg-file"></a>
+              <img src="img/Portfolio Website -.png" alt="">
+              <p class="center"></p>
+            </div>
+            <div class="box">
+              <h2 class="title">Calculator</h2>
+              <a href="https://github.com/Knightv269/codsoft/tree/Calculator" target="_blank"class="gg-file" ></a>
+              <p class="center"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
 
-    </nav>
-  </header>
-   <!-- header -->
-   <section id="home"> 
-    <div class="home">
-      <h1>Hi I am Vinayak!</h1> 
-    <!-- <div class="line"></div> -->
-    <p>A web developer passionate about crafting immersive online experiences. My journey in the digital realm involves sculpting the backbone of websites with HTML, bringing them to life with the artistry of CSS, and adding dynamic functionality through the wizardry of JavaScript. </p>
-    <div class="icons">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-instagram"></a>
-      <a href="#" class="fa fa-youtube-play"></a>
-      <a href="#" class="fa fa-github"></a>
-    </div>
-    </div>
-  </section>
-<section id="Skills">
-  <div class="skill_container"><h3>Skills</h3>
-  <hr class="styled">
-    <p>I have a grasp of HTML for structuring content and CSS for styling web pages.</p>
-    <P>Learning the basics of JavaScript for adding interactivity to websites.</P>
-    <p>I understand the importance of responsive design and are beginning to implement it in your projects.</p>
-    <P>I am getting familiar with version control systems like Git and platforms like GitHub to manage your code.</P>
-    <P>I am developing skills in organizing and managing your projects, understanding the importance of structure and planning.</P>
-    <P></P></div>
-  
-    
-    <div class="box"></div>
-  
-</section>
-</body>
-
+    <script type="text/javascript">
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+  </body>
 </html>
