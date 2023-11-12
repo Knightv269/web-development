@@ -71,7 +71,7 @@ body {
     background: rgba(0, 0, 0, 0.356);
     translate:0 100% ;
     transition: translate 0.375s cubic-bezier(0.175, 0.885, 0.32, 1);
-    left: 80rem;
+    left: 80vw;
   }
   
   .menu nav {
@@ -367,7 +367,7 @@ body {
 }
 #services .box:hover{
  transition:ease;
- background-color:#141010;
+ /* background-color:#141010; */
  color: white;
 }
 
@@ -376,6 +376,13 @@ body {
   font-size: 25px;
 
 } 
+#About img{
+  transition: 1s ease;
+}
+#About img:hover{
+    -webkit-filter: blur(5px);
+    transition: 1s ease;
+}
 .gg-file{
 top: -23px;
 }
