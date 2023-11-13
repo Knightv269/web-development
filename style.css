@@ -17,211 +17,205 @@ body {
   background-repeat: no-repeat;
 }
 .header {
-    display: inline-block;
-    position: absolute;
-    display: flex;
-  }
-  
-  button {
-    border: 0;
-    padding: 0;
-    background: transparent;
-    cursor: pointer;
-    display: flex;
-    position: relative;
-   flex-direction: column;
-   align-content: flex-end;
-   justify-content: center;
-   align-content: right;
-   text-align: right;
-  }
-  
-  .Menubar,
-  .menu {
-    position: fixed;
-    text-align: right;
-  }
-  button h1{
-    color: white;
-    font-family: "Euclid Circular A";
-    position: relative;
-    font-size: 40px;
-    left: 90rem;
-    
-  }
-  .Menubar{
-    z-index: 3;
-    top: 0;
-    left: 0;
-    display: flex;
-    place-items: center;
-    width: 88px;
-    height: 88px;
-    text-align: left;
-   
-  }
+  display: inline-block;
+  position: absolute;
+  display: flex;
+}
 
-  .menu {
-    z-index: 2;
-    top: 0;
-    display: flex;
-    place-items: left;
-    width: 300px;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.356);
-    translate:0 100% ;
-    transition: translate 0.375s cubic-bezier(0.175, 0.885, 0.32, 1);
-    left: 80vw;
-  }
-  
-  .menu nav {
-    opacity: 0;
-  }
-  
-  @keyframes menu-in {
-    0% {
-      clip-path: ellipse(60% 60% at 0% 50%);
-    }
-    100% {
-      clip-path: ellipse(120% 120% at 0% 50%);
-    }
-  }
-  
-  body.open .menu {
-    opacity: 1;
-    visibility: visible;
-    translate: 0;
-    animation: menu-in 0.375s;
-  }
-  
-  body.open .menu nav {
-    opacity: 1;
-  }
-  
-  .menu nav:hover a {
-    opacity: 0.25;
-  }
-  
-  .menu nav a:hover {
-    opacity: 1;
-  }
-  
-  .menu nav {
-    position: absolute;
-    top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: right;
-    margin-top: 50px;
-   
-  }
-  
-  .menu a {
-    position: relative;
-    color: #f9f9f9;
-    font-size: 30px;
-    font-family: "Euclid Circular A";
-    padding: 10px;
-    width: 300px;
-    text-decoration: none;
-    transition: 0.4s;
-    padding: 30px;
-  }
-  
-  .menu a::before,
-  .menu a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 10px;
-    width: 100%;
-    height: 2px;
-    border-radius: 2px;
-    transition: 0.4s;
-  }
-  
-  .menu a::before {
-    opacity: 0;
-    background: rgb(255 255 255 / 20%);
-  }
-  
-  .menu a::after {
-    transform: scaleX(0);
-    transform-origin: 50% 0%;
-    background: #f7f7f7;
-  }
-  
-  .menu a:hover::before {
-    opacity: 1;
-  }
-  
-  .menu a:hover::after {
-    transform: scaleX(1);
-  }
-  
-  body.open .menu a {
-    animation: appear 0.25s backwards;
-  }
-  
-  @keyframes appear {
-    0% {
-      opacity: 0;
-      translate: -30px 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: center;
+  align-content: right;
+  text-align: right;
+}
 
-#home{
+.Menubar,
+.menu {
+  position: fixed;
+  text-align: right;
+}
+button h1 {
+  color: white;
+  font-family: "Euclid Circular A";
+  position: relative;
+  font-size: 40px;
+  left: 90rem;
+}
+.Menubar {
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: flex;
+  place-items: center;
+  width: 88px;
+  height: 88px;
+  text-align: left;
+}
+
+.menu {
+  z-index: 2;
+  top: 0;
+  display: flex;
+  place-items: left;
+  width: 300px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.356);
+  translate: 0 100%;
+  transition: translate 0.375s cubic-bezier(0.175, 0.885, 0.32, 1);
+  left: 80vw;
+}
+
+.menu nav {
+  opacity: 0;
+}
+
+@keyframes menu-in {
+  0% {
+    clip-path: ellipse(60% 60% at 0% 50%);
+  }
+  100% {
+    clip-path: ellipse(120% 120% at 0% 50%);
+  }
+}
+
+body.open .menu {
+  opacity: 1;
+  visibility: visible;
+  translate: 0;
+  animation: menu-in 0.375s;
+}
+
+body.open .menu nav {
+  opacity: 1;
+}
+
+.menu nav:hover a {
+  opacity: 0.25;
+}
+
+.menu nav a:hover {
+  opacity: 1;
+}
+
+.menu nav {
+  position: absolute;
+  top: 50px;
   display: flex;
   flex-direction: column;
-  padding:3px 200px;
+  justify-content: center;
+  align-items: right;
+  margin-top: 50px;
+}
+
+.menu a {
+  position: relative;
+  color: #f9f9f9;
+  font-size: 30px;
+  font-family: "Euclid Circular A";
+  padding: 10px;
+  width: 300px;
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 30px;
+}
+
+.menu a::before,
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+.menu a::before {
+  opacity: 0;
+  background: rgb(255 255 255 / 20%);
+}
+
+.menu a::after {
+  transform: scaleX(0);
+  transform-origin: 50% 0%;
+  background: #f7f7f7;
+}
+
+.menu a:hover::before {
+  opacity: 1;
+}
+
+.menu a:hover::after {
+  transform: scaleX(1);
+}
+
+body.open .menu a {
+  animation: appear 0.25s backwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    translate: -30px 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
   height: 550px;
   position: relative;
   align-items: left;
   justify-content: center;
-  
 }
-#home::before{ 
+#home::before {
   content: "";
   position: absolute;
-  background: url('img/bg\ forrest.jpg') no-repeat center center/cover;
+  background: url("img/bg\ forrest.jpg") no-repeat center center/cover;
   height: 642px;
-  top:0px;
-  left:0px;
+  top: 0px;
+  left: 0px;
   width: 100%;
   z-index: -1;
 }
-.home{
-  animation:slidein-left 1s ease-in-out forwards;
+.home {
+  animation: slidein-left 1s ease-in-out forwards;
   animation-timing-function: ease-in-out;
 }
 @keyframes slidein-left {
   from {
     margin-left: 100%;
-    width: 300%
+    width: 300%;
   }
   to {
     margin-left: 0%;
     width: 100%;
   }
 }
-#home h1{
-  color:rgb(255, 255, 255);
+#home h1 {
+  color: rgb(255, 255, 255);
   text-align: left;
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
   font-size: 60px;
-  
 }
-#home p{
+#home p {
   font-size: 1.5rem;
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
   width: 700px;
   margin-top: 20px;
   color: white;
-  
 }
 
 /* social icon */
@@ -244,45 +238,43 @@ body {
 
 /* Facebook */
 .fa-facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
 /* Twitter */
 .fa-twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
-.fa-instagram{
-  background:#ac2bff;
-  color:white;
-}
-.fa-youtube-play{
-  background:#FF0000;
+.fa-instagram {
+  background: #ac2bff;
   color: white;
 }
-.fa-github{
+.fa-youtube-play {
+  background: #ff0000;
+  color: white;
+}
+.fa-github {
   background-color: #333;
   color: white;
 }
-#Skills{
+#Skills {
   display: flex;
   position: relative;
   flex-direction: column;
-  padding:3px 50px;
+  padding: 3px 50px;
   height: 90vh;
   align-items: right;
   justify-content: center;
-   background-color: rgb(0, 0, 0);
-   color: white;
-  
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
-.skill_container{
+.skill_container {
   border-radius: 20px;
   align-items: center;
- 
 }
-.styled{
+.styled {
   display: flex;
   position: relative;
   align-content: flex-end;
@@ -291,43 +283,57 @@ body {
   flex-direction: row;
   border-radius: 10px;
 }
-#Skills h3{
-  position: relative;
+#Skills h3 {
+ position: relative;
+  /* left: 80vw; */
   font-size: 50px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Euclid Circular A";
   text-align: right;
-  font-family: 'Bree Serif', serif;
-
+  font-family: "Bree Serif", serif;
+  background: #3e4444;
+  width: max-content;
+  left: 85vw;
+  border-radius: 10px;
+  padding: 10px;
 }
-.skill_container p{
+.skill_container p {
   font-size: 1.5rem;
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
   margin-top: 20px;
- text-align: right;
+  text-align: right;
 }
-#Projects{
+#Projects {
   background-color: black;
   display: flex;
   position: relative;
   flex-direction: column;
-  padding:3px 50px;
+  padding: 3px 50px;
   align-items: right;
   justify-content: center;
-   background-color: rgb(0, 0, 0);
-   color: white;
+  background-color: black;
+  color: white;
 }
-#Projects h3{
+#Projects h3 {
+ display: flex;
+ justify-content: center;
+ align-content: center;
   position: relative;
   font-size: 50px;
-  font-family: 'Times New Roman', Times, serif;
-  font-family: 'Bree Serif', serif;
-  left: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-family: "Bree Serif", serif;
+  text-align: center;
+  background: #3e4444;
+  border-radius: 15px;
+  padding: 10px;
+  width: fit-content;
+  left: 40vw;
+ 
 }
-#About{
+#About {
   position: relative;
   align-items: center;
 }
-#About h1{
+#About h1 {
   color: rgb(255, 255, 255);
   font-size: 50px;
   display: flex;
@@ -336,55 +342,160 @@ body {
   align-items: center;
   margin-top: 50px;
   padding: 60px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
-#services{
+#services {
   display: flex;
-  cursor: default; 
-  position: relative;  
-  margin-top: 40px;  
+  cursor: default;
+  position: relative;
+  margin-top: 40px; 
 }
-#services h2{
+#services h2 {
   font-size: 30px;
-  font-family: 'Times New Roman', Times, serif;
-  
+  font-family: "Times New Roman", Times, serif;
 }
-#services .box{ 
-  padding: 20px;
-  margin: 2px 30px;
+#services .box {
+  padding: 5px;
+  margin: 10px;
   border-radius: 28px;
-  background-color:rgb(9, 16, 36);
+  background-color: #0c111da6;
   width: 33.3%;
   margin-bottom: 20px;
   text-align: center;
 }
-#services .box img{ 
-  height: 200px;
+#services .box img {
+  height: 33vh;
   margin: auto;
   display: block;
   border-radius: 15px;
-}
-#services .box:hover{
- transition:ease;
- /* background-color:#141010; */
- color: white;
+  width: max-content;
+  
 }
 
-#services .box p{
-  font-family: 'Bree Serif', serif;
+#services .box p {
+  font-family: "Bree Serif", serif;
   font-size: 25px;
-
-} 
-#About img{
-  transition: 1s ease;
 }
-#About img:hover{
-    -webkit-filter: blur(5px);
-    transition: 1s ease;
+#services .box img:hover {
+  transition: all 0.7s ease;
+  transform: scale(1.1);
+  opacity: 0.7;
 }
-.gg-file{
-top: -23px;
+ .center{
+  margin-top: 20px;
+ }
+#services .box a{
+  color: white;
+  display: flex;
+ left: 30%;
 }
-
+#Contact{
+  background-color: black;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 3px 50px;
+  align-items: right;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+#Contact h1 {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  display: flex;
+  margin-top: 70px;
+  padding :10px;
+  font-family:'Times New Roman', Times, serif;
+  background: #3e4444;
+  width: max-content;
  
+  border-radius: 10px;
+  padding: 10px;
+  
+  border-radius: 10px;
+}
+
+#Contact .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction:column;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contact-form {
+  padding: 20px 0;
+  margin: 0 10px;
+
+}
+.contact-form h2{
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  font-family:"Raleway";
+  margin-bottom: -50px;
+}
+.contact-form h3{
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  font-family: "Trirong";
+}
+
+.form-container {
+  max-width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #0d1220;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display:block;
+  font-weight: bold;
+}
+.form-container input, textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  resize: vertical;
+}
+.submit-button {
+  padding: 10px 20px;
+  background-color: #000000;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.submit-button:hover{
+  background-color: #1b2e3f;
+
+}
+
+/* Contact info styles */
+.contact-info {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #000000;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+}
+
