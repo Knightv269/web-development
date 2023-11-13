@@ -304,12 +304,12 @@ body.open .menu a {
 
 #Skills h3 {
   position: relative;
-  /* left: 80vw; */
   font-size: 50px;
   font-family: "Euclid Circular A";
   text-align: center;
   font-family: "Bree Serif", serif;
   justify-content: center;
+  padding-bottom: 50px;
 }
 
 #Skills h3 span {
@@ -346,6 +346,7 @@ body.open .menu a {
   font-family: "Times New Roman", Times, serif;
   font-family: "Bree Serif", serif;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 #Projects h3 span {
@@ -369,6 +370,7 @@ body.open .menu a {
   margin-top: 50px;
   padding: 60px;
   font-family: "Times New Roman", Times, serif;
+  padding-bottom: 30px;
 }
 
 #services {
@@ -443,6 +445,8 @@ body.open .menu a {
   font-family: 'Times New Roman', Times, serif;
   justify-content: center;
   box-sizing: border-box;
+  padding-bottom: 30px;
+  padding-top: 50px;
 }
 
 #Contact h1 span {
@@ -472,7 +476,7 @@ body.open .menu a {
   justify-content: center;
   font-family: "Raleway";
   margin-bottom: -50px;
-  left: 35vw;
+  justify-content: center;
 }
 
 .contact-form h3 {
