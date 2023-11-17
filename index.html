@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="script.js">
+
+  </head>
+
+  <body>
+    <!-- navbar  -->
+    <nav id="navbar" class="nav">
+      <a href="#navbar" class="active">Home</a>
+      <a href="#About">About</a>
+      <a href="#Network">Network</a>
+      <a href="#Ourservices">Our Services</a>
+      <a href="#Shipping">Shipping Terms</a>
+      <a href="#Galleries">Galleries</a>
+      <a href="#Career">Career</a>
+      <a href="#Contactus">Contact Us</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    <section id="Home">
+      <div class="para1">
+        <p>
+          We emphasize on excellence and will go the extra mile to make your
+          vision come true
+        </p>
+      </div>
+    </section>
+    <script>
+        function myFunction() {
+    var x = document.getElementById("navbar");
+    if (x.className === "nav") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav";
+    }
+  }
+    </script>
+  </body>
+</html>
