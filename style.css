@@ -91,7 +91,6 @@ body {
   flex-wrap: wrap;
   height: 70vh;
 }
-
 .home::before {
   content: "";
   position: absolute;
@@ -100,7 +99,7 @@ body {
   top: 0px;
   left: 0px;
   width: 100%;
-  opacity: 1;
+  filter: brightness(70%);
   z-index: -1;
 }
 
@@ -111,30 +110,33 @@ body {
 
   #logo {
     right: 10vw;
-
+   
   }
 }
 
 #logo {
   display: flex;
-  align-items: flex-start;
+  
   position: absolute;
   flex-direction: column;
-  top: 10vh;
+  top: 20vh;
   font-family: "Poppins";
 }
 
 #logo h1 {
-  font-size: 6vi;
-  background-color: rgba(235, 235, 235, 0.466);
+  font-size: 10vh;
+  
   border-radius: 20px;
+  font-family: 'Poppins';
+  color: white;
 }
 
 #logo p {
-  font-size: 2vw;
+  font-size: 5vh;
   margin-top: 10px;
-  background-color: rgba(255, 255, 255, 0.466);
+ 
   border-radius: 20px;
+  color: white;
 }
 
 
@@ -149,7 +151,7 @@ body {
 
 #Ourservices h1 {
   padding: 10px;
-  font-size: 45px;
+  font-size: 4rem;
   font-family: "Times New Roman", Times, serif;
   display: flex;
   justify-content: center;
@@ -157,7 +159,7 @@ body {
 
 @media screen and (max-width: 800px) {
   #Ourservices {
-    top: 70vh;
+    top: 60vh;
     position: relative;
     margin: 0px;
     padding: 0px;
@@ -169,6 +171,7 @@ body {
   cursor: default;
   position: relative;
   flex-direction: row;
+  flex-wrap:nowrap;
 
 }
 
@@ -181,30 +184,22 @@ body {
   #services {
     position: relative;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0px;
     padding: 0px;
-    justify-content: center;
+    justify-content: space-evenly;
 
-  }
-
-  #services .box {
-    height: 50vh;
-    overflow:auto;
-   
-    
-    
   }
 }
 
 #services .box {
   margin: 10px;
   padding: 10px;
-  border-radius: 28px;
-  background-color: #04aa6d;
+  border-radius: 10px;
+  background-color: #ffffff;
   margin-bottom: 20px;
   flex-wrap: wrap;
-  width: 33.3%;
+ 
  
 
 }
@@ -244,7 +239,14 @@ body {
   margin-top: 10px;
   margin-bottom: 20px;
   padding: 3px;
+  border: none;
   border-radius: 5px;
   width: 70%;
-  background-color: #04aa6d;
+  background-color: #393e46;
+}
+ .column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0px 20px 0px;
 }
